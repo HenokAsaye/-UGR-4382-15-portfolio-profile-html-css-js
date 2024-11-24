@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./Portfolio.html">Portfolio</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="portfolio">
+            <h1>Portfolio</h1>
+            <div class="project-grid">
+                <article class="project">
+                    <img src="./images/ReadNest.png" alt="Project 1">
+                    <h3>Read Nest</h3>
+                    <p>ReadNest is a web-based book management application that enables users to catalog their reading collection, take detailed notes, and track progress.
+                        <span id="hiddenContent1">
+                            The platform allows users to add, edit, and delete books, as well as rate them and organize their reading insights through notes. Built with Node.js 
+                            and Express, it provides a robust backend that handles user authentication and data management. PostgreSQL is used for secure and efficient data storage,
+                           supporting features like CRUD operations on books and user data. The application aims to create a seamless experience for users to organize and reflect on 
+                           their reading journey.
+                        </span></p>
+                    <a href="hiddenContent1">Learn More</a>
+                    <a href="https://github.com/HenokAsaye/Read-Nest" target="_blank">
+                        <img src="./images/link-icon.png" alt="GitHub Repo" style="width: 24px; height: 24px;">
+                        View on GitHub
+                    </a>
+                </article>
+                <article class="project">
+                    <img src="./images/SocialMediaApi.png" alt="Project 2">
+                    <h3>Simple Social Media Api</h3>
+                    <p>The Simple Social Media Feed API repository provides a foundational backend system for a social media platform,
+                     offering features like user authentication, post management, and interactions such as likes and comments
+                     <span id="hiddenContent2">
+                     Built with Node.js and secured with JWT, it demonstrates core RESTful API principles while ensuring scalability
+                     and efficiency. The API supports user-specific feeds and plans for enhancements like real-time notifications and 
+                     optimized database queries. This project is an excellent resource for learning backend development, showcasing CRUD
+                     operations, secure access, and modular design, making it a great starting point for developers building or extending social media applications.</span></p>
+                    <a id="toggle-content1" href="hiddenContent2">Learn More</a>
+                    <a href="https://github.com/HenokAsaye/Simple-Social-Media-Api" target="_blank">
+                        <img src="./images/link-icon.png" alt="GitHub Repo" style="width: 24px; height: 24px;">
+                        View on GitHub
+                    </a>
+                </article>
+                <article class="project">
+                    <img src="./images/BookNoteVault.png" alt="Project 3">
+                    <h3>Book-Note Vault</h3>
+                    <p>The Book Note Vault repository showcases a web-based application designed for book enthusiasts to catalog, rate, and organize
+                        their reading insights.
+                        <span id="hiddenContent3">
+                            Built using Node.js, Express, PostgreSQL, and EJS, it offers a seamless way to perform CRUD operations
+                            on book entries, enabling users to write notes, rate books, and sort entries by rating or recency. The project integrates public APIs to enhance functionality,
+                            reflecting modern web development practices. With a focus on usability and efficient data handling, it demonstrates concepts like database design, authentication,
+                            and data persistence. This repository is an excellent resource for developers exploring full-stack development, offering practical insights into building dynamic,
+                            user-centric applications with robust backend support.
+                        </span> </p>
+                    <a id="toggle-content2" href="hiddenContent3">Learn More</a>
+                    <a href="https://github.com/HenokAsaye/Book-Note-Vault" target="_blank">
+                        <img src="./images/link-icon.png" alt="GitHub Repo" style="width: 24px; height: 24px;">
+                        View on GitHub
+                    </a>
+                </article>
+                <article class="project">
+                    <img src="./images/Ecommerce.png" alt="Project 4">
+                    <h3>Secure-E-Commerce-Backend-with-Payment-Integration-and-Product-Management</h3>
+                    <p>The Secure E-Commerce Backend with Payment Integration and Product Management repository
+                        demonstrates a robust backend system for managing e-commerce operations.<span id="hiddenContent4"> Built with Node.js
+                        and integrated with Stripe for secure payment processing, it handles essential features like
+                        order creation, cart management, and payment sessions. The project emphasizes modular design,
+                        separating payment and order handling while ensuring secure authentication and efficient data storage.
+                        With support for advanced functionalities like webhook integration for real-time payment status updates,
+                        it reflects best practices in backend development. This repository is an invaluable resource for developers
+                        aiming to build secure, scalable e-commerce platforms, offering insights into payment handling, database optimization, and API design.</span></p>
+                    <a id="toggle-content3" href="hiddenContent4">Learn More</a>
+                    <a href="https://github.com/HenokAsaye/Secure-E-Commerce-Backend-with-Payment-Integration-and-Product-Management" target="_blank">
+                        <img src="./images/link-icon.png" alt="GitHub Repo" style="width: 24px; height: 24px;">
+                        View on GitHub
+                    </a>
+                </article>
+            </div>
+            <div class="seemore">
+                <button id="toggle-button">See More</button>
+            </div>
+        </section>
+        <section class="videos">
+            <h2>Project Demos</h2>
+            <div class="video-slider">
+                <button class="arrow left-arrow">&lt;</button>
+                <div class="video-container">
+                    <div class="video">
+                        <video controls>
+                            <source src="./videos/ReadNest.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video">
+                        <video controls>
+                            <source src="./videos/BookNoteVault.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video">
+                        <video controls>
+                            <source src="./videos/Ecommaerce.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video" id="hiddenVideo">
+                        <video controls>
+                            <source src="./videos/SocialMediaApi.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <button class="arrow right-arrow">&gt;</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:henokasaye77@gmail.com">henokasaye77@gmail.com</a></p>
+            <p>Phone: +251910152982</p>
+            <p>Telegram: <a href="https://t.me/in1879">@in1879</a></p>
+        </div>
+        <div class="quote">
+            <h3>"Code is not just what I write; it’s how I create, solve, and inspire. Every line is a step toward innovation."</h3>
+        </div>
+        <div class="social-media">
+            <a href="https://web.facebook.com/profile.php?id=100087732202290"><img src="./images/facebook.png" alt="Facebook"></a>
+            <a href="https://t.me/in1879"><img src="./images/Telegram.png" alt="Telegram"></a>
+            <a href="https://github.com/HenokAsaye"><img src="./images/github.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/henok-asaye/"><img src="./images/linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+</body>
+</html>
