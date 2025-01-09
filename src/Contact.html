@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contact.css">
     <title>Contact</title>
 </head>
 <body>
@@ -10,44 +11,47 @@
         <div class="logo">
             <img src="./images/logo.png" alt="Logo">
         </div>
+        <div class="hamburger"></div>
         <nav>
             <ul>
                 <li><a href="./home.html">Home</a></li>
                 <li><a href="./About.html">About</a></li>
-                <li><a href="./services.html">Services</a></li>
+                <li><a href="./services.html">Service</a></li>
                 <li><a href="./Portfolio.html">Portfolio</a></li>
                 <li><a href="./Contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </header>  
     <main>
-        <div class="contact">
-            <section class="header">
-                <h1>Contact Me</h1>
-            </section>
-            <div class="email">
-                <img src="./images/gmaillogo.png" alt="email">
-                <a href="mailto:henokasaye77@gmail.com">henokasaye77@gmail.com</a>
+        <div class="contact-inputwrapper">
+            <div class="contact">
+                <section class="header">
+                    <h1>Contact Me</h1>
+                </section>
+                <div class="email">
+                    <img src="./images/gmaillogo.png" alt="email">
+                    <a href="mailto:henokasaye77@gmail.com">henokasaye77@gmail.com</a>
+                </div>
+                <div class="socialmediaAccounts">
+                    <a href="https://web.facebook.com/profile.php?id=100087732202290"><img src="./images/facebook.png" alt="Facebook"></a>
+                    <a href="https://t.me/in1879"><img src="./images/Telegram.png" alt="Telegram"></a>
+                    <a href="https://github.com/HenokAsaye"><img src="./images/github.png" alt="github"></a>
+                    <a href="https://www.linkedin.com/in/henok-asaye/"><img src="./images/linkedin.png" alt="linkedin"></a>
+                </div>
             </div>
-            <div class="socialmediaAccounts">
-                <a href="https://web.facebook.com/profile.php?id=100087732202290"><img src="./images/facebook.png" alt="Facebook"></a>
-                <a href="https://t.me/in1879"><img src="./images/Telegram.png" alt="Telegram"></a>
-                <a href="https://github.com/HenokAsaye"><img src="./images/github.png" alt="github"></a>
-                <a href="https://www.linkedin.com/in/henok-asaye/"><img src="./images/linkedin.png" alt="linkedin"></a>
+            <div class="input">
+                <h3>Name</h3>
+                <input type="text" name="name" placeholder="Please Enter your name">
+                <h3>Email</h3>
+                <input type="text" name="email" placeholder="Please Enter your Email">
+                <h3>Comment</h3>
+                <textarea name="comment" rows="6" placeholder="Enter Your Message"></textarea>
             </div>
         </div>
-        <section class="input">
-            <h3>Name</h3>
-            <input type="text" name="name" placeholder="Please Enter your name">
-            <h3>Email</h3>
-            <input type="text" name="email" placeholder="Please Enter your Email">
-            <h3>Comment</h3>
-            <textarea name="comment" rows="6" placeholder="Enter Your Message"></textarea>
-            <button type="submit">Submit</button>
-        </section>
-        <div class="downloadcv">
-            <h3>Download My CV</h3>
-            <a href="./files/Henok_Asaye_CV_(1).pdf" download class="button">Download CV</a>
+
+        <div class="button">
+            <button id="DownloadCv"><a href="./files/Henok_Asaye_CV_(1).pdf" download class="button">Download CV</a></button>
+            <button id="submit" type="submit">Submit</button>
         </div>
     </main>
     <footer>
@@ -66,5 +70,6 @@
             <a href="https://www.linkedin.com/in/henok-asaye/"><img src="./images/linkedin.png" alt="linkedin"></a>
         </div>
     </footer>
+    <script src="../script/script.js"></script>
 </body>
 </html>

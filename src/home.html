@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Home.css">
     <title>Home</title>
 </head>
 <body>
@@ -10,6 +11,7 @@
         <div class="logo">
             <img src="./images/logo.png" alt="Logo">
         </div>
+        <div class="hamburger"></div>
         <nav>
             <ul>
                     <li><a href="./home.html">Home</a></li>
@@ -21,12 +23,14 @@
         </nav>
     </header>
     <main>
-        <div class="description">
-            <h1>Welcome to My Website</h1>
-            <h2>Your one-stop solution for creative and technical services. Let's build something amazing together!</h2>
-        </div>
-        <div class="photo">
-            <img src="./images/Photo.jpg" alt="Main Visual">
+        <div class="container">
+            <div class="photo">
+                <img src="./images/Photo.jpg" alt="Main Visual">
+            </div>
+            <div class="description">
+                <h1>Welcome to My Website</h1>
+                <h2>Your one-stop solution for creative and technical services. Let's build something amazing together!</h2>
+            </div>
         </div>
         <div class="little-brief">
             My name is Henok, a passionate software developer with expertise in building dynamic and user-friendly applications. 
@@ -34,7 +38,7 @@
         </div>
         <div class="buttons">
             <button>Contact</button>
-            <button>Let's Talk</button>
+            <button id="talk">Let's Talk</button>
             <audio id="aboutMeAudio" controls>
                 <source src="./Audio/PortfolioAudion.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
@@ -48,13 +52,15 @@
         </div>
     </main>
     <footer>
-        <div class="address">
-            <h3>Email: <a href="mailto:henokasaye77@gmail.com">henokasaye77@gmail.com</a></h3>
-            <h3>Phone: +251910152982</h3>
-            <h3>Telegram: <a href="https://t.me/in1879">@in1879</a></h3>
-        </div>
         <div class="footerDescription">
-            <h3>"Code is not just what I write; it’s how I create, solve, and inspire. Every line is a step toward innovation."</h3>
+            <div id="address">
+                <h3>Email: <a href="mailto:henokasaye77@gmail.com">henokasaye77@gmail.com</a></h3>
+                <h3>Phone: +251910152982</h3>
+                <h3>Telegram: <a href="https://t.me/in1879">@in1879</a></h3>
+            </div>
+            <div id="slogan">
+                <h3>"Code is not just what I write; it’s how I create, solve, and inspire. Every line is a step toward innovation."</h3>
+            </div>
         </div>
         <div class="socialmedia">
             <a href="https://web.facebook.com/profile.php?id=100087732202290"><img src="./images/facebook.png" alt="Facebook"></a>
@@ -63,5 +69,6 @@
             <a href="https://www.linkedin.com/in/henok-asaye/"><img src="./images/linkedin.png" alt="linkedin"></a>
         </div>
     </footer>
+    <script src="../script/script.js"></script>
 </body>
 </html>
