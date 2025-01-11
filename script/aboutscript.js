@@ -5,6 +5,7 @@ hamburger.addEventListener('click', (e) => {
     nav.classList.toggle('nav-active');
     e.stopPropagation();  
 });
+
 document.addEventListener('click', (e) => {
     if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
         nav.classList.remove('nav-active');
