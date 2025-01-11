@@ -501,6 +501,9 @@ footer:hover {
         transition: transform 0.3s ease-in-out;
         margin-bottom: 20px;
     }
+    .service-card #hidden-service1,#hidden-service2{
+        display:flex;
+    }
     .service-card.visible {
         display: flex;
         flex-direction: column;
@@ -633,6 +636,12 @@ footer:hover {
         justify-content: center;
         gap: 20px;
         margin: 50px auto;
+    }
+    .service1{
+        display:flex;
+    }
+    .service2{
+        display: flex;
     }
     .service-card {
         flex:0 0 clac(33.33% - 20px);

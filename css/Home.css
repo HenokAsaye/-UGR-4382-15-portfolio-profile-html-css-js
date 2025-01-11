@@ -357,6 +357,10 @@ footer .socialmedia a img {
         align-items: center;
         justify-content: center;
     }
+    .buttons #telegramlink{
+        text-decoration: none;
+        color:white;
+    }
     .buttons button {
         background: #775ADF;
         color: #fff;

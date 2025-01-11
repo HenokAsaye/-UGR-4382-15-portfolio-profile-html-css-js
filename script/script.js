@@ -1,9 +1,19 @@
+const contactBtn = document.getElementById('contactBtn');
+const talkBtn = document.getElementById('talk');
+contactBtn.addEventListener('click', function () {
+    window.location.href = './src/Contact.html';
+});
+talkBtn.addEventListener('click', function () {
+    window.location.href = 'https://t.me/in1879';
+});
+
+
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('nav');
 
 hamburger.addEventListener('click', (e) => {
     nav.classList.toggle('nav-active');
-    e.stopPropagation();  // Prevent click event from bubbling to the document
+    e.stopPropagation();  
 });
 
 document.addEventListener('click', (e) => {
@@ -43,9 +53,6 @@ seeMoreBtn.addEventListener('click', () => {
         seeMoreBtn.textContent = 'See More';
     }
 });
-
-
-
 
 
 
